@@ -89,13 +89,21 @@ const loadQuestion = (quizObject, index) => {
 	options = question.options;
 	const htmlTemplate = `
 	    <div class="question">
-	    	<div class="top"></div>
-            <div class="qtext">${question.qtext}</div>
-            <div class="option" data-id="${options[0].isCorrect}"><a href="#"}">${options[0].otext}</a></div>
-            <div class="option" data-id="${options[1].isCorrect}"><a href="#">${options[1].otext}</a></div>
-            <div class="option" data-id="${options[2].isCorrect}"><a href="#">${options[2].otext}</a></div>
+	    	<div class="top">
+				<div>
+					<img src="images/logo.png"
+				</div>
+
+	            <div class="qtext">${question.qtext}</div>
+	            <div class="option"><a href="#">${options[0].otext}</a></div>
+	            <div class="option"><a href="#">${options[1].otext}</a></div>
+	            <div class="option"><a href="#">${options[2].otext}</a></div>
+			</div>
         </div>
-    	`;
+		<div class="swipe">
+			<p><small>Swipe left to reveal comments</small></p>
+		</div>
+    	`
     $('main').append(htmlTemplate);
     $('.option').each(oindex => {
     	console.log('added onclick to option ' + oindex);
