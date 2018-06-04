@@ -75,7 +75,7 @@ const loadFeedback = (oindex) => {
 	}
     let points = scorecard.filter(correct => correct).length;
     let plural = points === 1 ? '' : 's';
-    let feedbackHTML = `<h1>You got it ${rightOrWrong}!</h1><div class="next"><a href="#">Next Question</a></div><div class="points">You've earned ${points} point${plural} so far.</div>`;
+    let feedbackHTML = `<div class="top feedback"><h1 class="question">You got it ${rightOrWrong}!</h1><div class="next answer"><a href="#">Next Question</a></div><div class="points question">You've earned ${points} point${plural} so far.</div></div>`;
 	$('main').append(feedbackHTML);
 	$('.next').on('click', (e) => {
 		e.preventDefault();
@@ -87,11 +87,12 @@ const loadQuestion = (quizObject, index) => {
 	qindex = index;
 	question = quizObject[qindex];
 	options = question.options;
+	$('.feedback').remove();
 	const htmlTemplate = `
 	    <div class="question">
 	    	<div class="top">
 				<div>
-					<img src="images/logo.png"
+					<img src="img/logo.png"
 				</div>
 
 	            <div class="qtext">${question.qtext}</div>
