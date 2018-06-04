@@ -27,6 +27,13 @@
 
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <div id="q${index}" class="question">
+            <div class="qtext">${quizObject[index].qtext}</div>
+            <div class="option"><a href="#" class="${quizObject[index].qtext.options[0].isCorrect}">${quizObject[index].qtext.options[0].otext}</a></div>
+            <div class="option"><a href="#" class="${quizObject[index].qtext.options[1].isCorrect}">${quizObject[index].qtext.options[1].otext}</a></div>
+            <div class="option"><a href="#" class="${quizObject[index].qtext.options[2].isCorrect}">${quizObject[index].qtext.options[2].otext}</a></div>
+        </div>
+    </main>
     <footer></footer>
 </body>

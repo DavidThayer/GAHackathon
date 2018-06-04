@@ -6,14 +6,14 @@ a, a:hover, button, img, i, ol, ul, li,
 form,
 article, aside, footer, header,
 menu, nav, section {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     border: 0;
     line-height: 0;
     text-decoration: none;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
     color: inherit;
@@ -25,3 +25,62 @@ select {
     outline: none !important;
 }
 
+
+/* BASE STYLES ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    background: #6a6361;
+    height: 30em;
+}
+
+li {
+    list-style: none;
+}
+
+.top {
+    height: 40vh;
+}
+
+.cont-column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* QUESTIONS PAGE ========================================= */
+
+
+main {
+    margin: 2em auto;
+    width: 375px;
+    height: 667px;
+    background-color: #88D7FF;
+}
+
+.question {
+    /* width: 80%; */
+    display: block;
+}
+
+.option a {
+    text-decoration: none;
+    padding: 1em;
+    background-color: #F05EA1;
+    border-radius: 1.8em;
+    color: white;
+    margin: 1em;
+    width: 100;
+    justify-content: center;
+    display: block;
+}
