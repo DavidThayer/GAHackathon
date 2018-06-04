@@ -1,0 +1,27 @@
+/* CSS Reset */
+
+*, html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+a, a:hover, button, img, i, ol, ul, li,
+form,
+article, aside, footer, header,
+menu, nav, section {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    line-height: 0;
+    text-decoration: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: inherit;
+    background-color: transparent;
+     /*border: 1px solid black;*/
+}
+
+select {
+    outline: none !important;
+}
+
